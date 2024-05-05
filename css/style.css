@@ -1,0 +1,154 @@
+/* Atur Viewport */
+body {
+    background-color: #f9f9f9;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Pastikan padding dan border tidak mempengaruhi ukuran elemen */
+}
+
+/* Gaya Header */
+header {
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.5rem;
+}
+
+/* Navigasi */
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* Gaya Bagian Utama */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Gaya Karakter */
+.character-list {
+    width: 60%;
+    margin: 20px auto;
+    padding: 0;
+    list-style: none;
+}
+
+.character-list li {
+    padding: 15px;
+    background-color: #e5e5e5;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px 0;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.character-list li img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid #333;
+}
+
+.character-list li:hover {
+    transform: scale(1.05);
+    background-color: #dcdcdc;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Gaya Galeri */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.gallery img {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    width: 150px;
+    height: 150px;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Gaya Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Tombol Kembali ke Atas */
+#backToTop {
+    background-color: purple;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#backToTop:hover {
+    background-color: #c70039;
+    transform: scale(1.05);
+}
+
+/* Media Queries untuk Responsivitas */
+@media (max-width: 768px) { /* Untuk layar lebih kecil */
+    .character-list {
+        width: 80%; /* Lebih lebar untuk tampilan mobile */
+    }
+
+    nav ul li {
+        display: block; /* Vertikal untuk layar kecil */
+        margin: 10px 0; /* Jarak antar elemen */
+    }
+
+    section {
+        padding: 15px; /* Kurangi padding untuk layar kecil */
+    }
+}
+
+@media (min-width: 769px) { /* Untuk layar lebih besar */
+    .character-list {
+        width: 60%; /* Kurangi lebar untuk layar besar */
+    }
+    
+    nav ul li {
+        display: inline; /* Tata letak horizontal untuk layar besar */
+        margin: 0 10px;
+    }
+
+    section {
+        padding: 25px; /* Lebih banyak padding untuk layar besar */
+    }
+}
